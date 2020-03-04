@@ -1,0 +1,11 @@
+INSERT INTO users (name, email, password)
+VALUES ("Noah Novick", "noahnovick@noah.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u."), ("Igor Cekan", "igorcekan@noah.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u."), ("David He", "davidhe@noah.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u."), ("Liubov Kleimenova", "luba@noah.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u."), ("Rahul Anthony Mitra", "rahul@noah.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u."), ("Victor Yu", "victor@noah.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.");
+
+INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code, active)
+VALUES (1, "Noah's Novicks", "description", "https://mediaproxy.salon.com/width/1200/height/1200/https://media.salon.com/2020/01/donald-trump-010220.jpg", "https://mediaproxy.salon.com/width/1200/height/1200/https://media.salon.com/2020/01/donald-trump-010220.jpg", 40295, 6, 4, 2, "Canada", "123 Noah Road", "Vancouver", "British Columbia", "V6R2M5", true), (2, "Igor's Cekans", "description", "https://mediaproxy.salon.com/width/1200/height/1200/https://media.salon.com/2020/01/donald-trump-010220.jpg", "https://mediaproxy.salon.com/width/1200/height/1200/https://media.salon.com/2020/01/donald-trump-010220.jpg", 54381, 23, 5, 6, "Canada", "123 Lucas Lane", "Toronto", "Ontario", "M5S2H8", true), (3, "David's Hes", "description", "https://mediaproxy.salon.com/width/1200/height/1200/https://media.salon.com/2020/01/donald-trump-010220.jpg", "https://mediaproxy.salon.com/width/1200/height/1200/https://media.salon.com/2020/01/donald-trump-010220.jpg", 12395, 1, 0, 0, "Zimbabwe", "123 David Avenue", "Harare", "Harare", "000000", true);
+
+INSERT INTO reservations (start_date, end_date, property_id, guest_id)
+VALUES ("2001-09-10", "2001-09-12", 1, 3), ("2005-12-02", "2007-10-23", 2, 1), ("2015-03-07", "2020-02-29", 2, 4);
+
+INSERT INTO property_reviews (guest_id, property_id, reservation_id, rating, message)
+VALUES (1, 2, 3, 4, "messages"), (4, 3, 2, 1, "messages"), (3, 1, 1, 2, "messages");
